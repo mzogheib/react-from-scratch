@@ -1,2 +1,8 @@
-import stranger from './module'
-console.log(`Hello ${stranger}`);
+import React from "react";
+import ReactDOM from "react-dom";
+
+const Index = () => {
+  return <div>Hello React!</div>;
+};
+
+ReactDOM.render(<Index />, document.getElementById("index"));
