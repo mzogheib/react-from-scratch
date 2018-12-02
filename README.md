@@ -49,6 +49,7 @@ plugins: [
   new MiniCssExtractPlugin()
 ]
 ```
+6. Install `html-webpack-plugin` and `clean-webpack-plugin` and add to plugins array
 ## TODO
 * HMR
 * Linting, prettier etc
