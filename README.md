@@ -19,7 +19,16 @@ npm install --save-dev babel-loader @babel/core @babel/preset-env
 npm install --save react react-dom
 npm install --save-dev @babel/preset-react
 ```
-
+4. Install `weback-dev-server`
+```
+npm install --save weback-dev-server
+```
+```
+"scripts": {
+  "start": "webpack-dev-server --mode=development --open",
+  ...
+},
+```
 ## TODO
 * HMR
 * CSS preprocessing
