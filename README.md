@@ -29,9 +29,28 @@ npm install --save weback-dev-server
   ...
 },
 ```
+5. Add a scss loader
+```
+npm install sass-loader node-sass --save-dev
+npm install mini-css-extract-plugin css-loader --save-dev
+```
+```
+// Chain the loaders
+{
+  test: /\.scss$/,
+  use: [
+    MiniCssExtractPlugin.loader,
+    'css-loader',
+    'sass-loader'
+  ]
+},
+// Create a main.css file
+plugins: [
+  new MiniCssExtractPlugin()
+]
+```
 ## TODO
 * HMR
-* CSS preprocessing
 * Linting, prettier etc
 
 # Resources
