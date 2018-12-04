@@ -50,6 +50,14 @@ plugins: [
 ]
 ```
 6. Install `html-webpack-plugin` and `clean-webpack-plugin` and add to plugins array
+
+7. Support testing with `jest`
+    * `babel-core@^7.0.0-0` needs to be added. See [here](https://stackoverflow.com/questions/50620775/requires-babel-7-0-0-0-but-was-loaded-with-6-26-0).
+    * Add jest config in `package.json` to mock css and transpile js
+```
+npm install --save-dev jest babel-jest babel-core@^7.0.0-0
+```
+
 ## TODO
 * HMR
 * Linting, prettier etc
