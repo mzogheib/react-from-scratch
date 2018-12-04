@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   devServer: {
     contentBase: './dist',
+    stats: 'minimal'
   },
   module: {
     rules: [
