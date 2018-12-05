@@ -59,8 +59,12 @@ npm install --save-dev jest babel-jest babel-core@^7.0.0-0
 ```
 
 ## TODO
-* HMR
+* HMR? Or is simple reloading good enough
+* favicon
+* Load images
 * Linting, prettier etc
+* Polyfills
+* Autoprefixing
 
 # Resources
 https://webpack.js.org/guides/getting-started/
