@@ -23,13 +23,20 @@ module.exports = {
           'css-loader',
           'sass-loader'
         ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader'
+          }
+        ]
       }
     ]
   },
   plugins: [
     new CleanWebpackPlugin(['./dist']),
     new HtmlWebpackPlugin({
-      title: 'My App',
       hash: true,
       template: './src/index.html'
     }),

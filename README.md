@@ -51,7 +51,10 @@ plugins: [
 ```
 6. Install `html-webpack-plugin` and `clean-webpack-plugin` and add to plugins array
 
-7. Support testing with `jest`
+7. Install `react-helmet` and set all the `<head>` things in it.
+    * Alternatively do it in `index.html` and copy favicons to the `/dist` folder.
+
+8. Support testing with `jest`
     * `babel-core@^7.0.0-0` needs to be added. See [here](https://stackoverflow.com/questions/50620775/requires-babel-7-0-0-0-but-was-loaded-with-6-26-0).
     * Add jest config in `package.json` to mock css and transpile js
 ```
@@ -60,8 +63,6 @@ npm install --save-dev jest babel-jest babel-core@^7.0.0-0
 
 ## TODO
 * HMR? Or is simple reloading good enough
-* favicon
-* Load images
 * Linting, prettier etc
 * Polyfills
 * Autoprefixing
