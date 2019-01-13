@@ -1,11 +1,11 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   devServer: {
     contentBase: './dist',
-    stats: 'minimal'
+    stats: 'minimal',
   },
   module: {
     rules: [
@@ -14,32 +14,28 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
-        }
+        },
       },
       {
         test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader'
-        ]
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(png|jpg|gif)$/,
         use: [
           {
-            loader: 'file-loader'
-          }
-        ]
-      }
-    ]
+            loader: 'file-loader',
+          },
+        ],
+      },
+    ],
   },
   plugins: [
     new CleanWebpackPlugin(['./dist']),
     new HtmlWebpackPlugin({
       hash: true,
-      template: './src/index.html'
+      template: './src/index.html',
     }),
-    new MiniCssExtractPlugin()
-  ]
-};
+    new MiniCssExtractPlugin(),
+  ],
+}
