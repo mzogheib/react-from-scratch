@@ -21,7 +21,7 @@ npm install --save-dev @babel/preset-react
 ```
 4. Install `weback-dev-server`
 ```
-npm install --save weback-dev-server
+npm install --save-dev webpack-dev-server
 ```
 ```
 "scripts": {
@@ -77,3 +77,5 @@ https://github.com/babel/babel-loader
 https://medium.freecodecamp.org/part-1-react-app-from-scratch-using-webpack-4-562b1d231e75
 
 https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/
+
+https://medium.freecodecamp.org/how-to-combine-webpack-4-and-babel-7-to-create-a-fantastic-react-app-845797e036ff
