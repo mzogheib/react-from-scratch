@@ -85,7 +85,6 @@ npm install -save-dev prettier eslint eslint-config-prettier eslint-loader eslin
 ## TODO
 
 - HMR? Or is simple reloading good enough
-- Linting, prettier etc
 - Polyfills
 - Autoprefixing
 
